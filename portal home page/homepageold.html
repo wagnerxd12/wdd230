@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagner Sanches - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Wagner Sanches | course assignment portal">
+    <meta name="author" content="Wagner Sanches">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="styles/homepageold.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!-- Propriedades Meta do Open Graph -->
+    <meta property="og:title" content="My home town">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://maceioalgovbr.dhost.cloud/uploads/imagens/26-07-23-Ponta-Verde-Maceio-Orla-Praia-SEMTUR-foto-Jonathan-Lins-7.jpg">
+    <meta property="og:url" content="https://www.facebook.com/wagner.sanches.5686?mibextid=ZbWKwL">    
+    
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Wagner Sanches">
+        <span>Wagner Sanches</span>
+        <button id="dark-mode-btn">Modo Escuro</button> <!-- Botão de modo escuro -->
+        <button id="light-mode-btn">Modo Claro</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">SESC Alagoas</a></li>
+               <li><button id="site-plan-btn">Site Plan</button></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <button id="hamburger-btn">&#8801;</button> <!-- Botão de hambúrguer -->
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities:</h2>
+            <ul>
+                <li>Week 1:</li>
+                <li>Week 2:</li>
+                <li>Week 3:</li>
+                <li>Week 4:</li>
+                <li>Week 5:</li>
+                <li>Week 6:</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>ℹ️ Information:</h2>
+            <p>🏠 Lives in Residencial Lago Sul, Maceió AL</p>
+            <p>💼 Works as an English teacher</p>
+            <p>🎓 Passionate about learning and teaching English</p>
+            <p>📚 Studying English vocabulary and phrases</p>
+            <p>🎵 Enjoys listening to music</p>
+            <p>🎥 Likes watching movies and TV shows</p>
+            <p>🚴‍♂️ Enjoys biking</p>
+            <p>⚽ Loves playing soccer</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Wagner Sanches | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESC Alagoas Chamber of Commerce</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3175/3175199.png">
+    <meta name="description" content="SESC Alagoas Chamber of Commerce - Discover local events, gastronomy, and cultural experiences in Alagoas, Brazil.">
+    <meta name="author" content="Wagner Sanches">
+    <meta property="og:title" content="SESC Alagoas Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.praiasdemaceio.com/wp-content/uploads/2017/03/Praia-de-Graxuma.jpg">
+    <meta property="og:url" content="https://wagnerxd12.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/HomePage.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/sesclogo.jpg" alt="SESC Alagoas Logo">
+        <h1>SESC Alagoas Chamber of Commerce - Maceió</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><img src="images/facebook-icon.jpg" alt="Facebook Icon" class="facebook-icon"></li>
+            </ul>
+        </nav>
+        <button id="hamburger-btn">&#8801;</button> <!-- Botão de hambúrguer -->
+    </header>
+
+    <main>
+        <button id="toggleView">Toggle View</button>
+        <div id="directory" class="grid-view"></div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us: info@sescalagoas.com.br | 82 3326-3133</p>
+        </div>
+        <div class="additional-info">
+            <p>Developed by Wagner Sanches WDD 230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/directory.js"></script>
+
+</body>
+
+</html>

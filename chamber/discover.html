@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESC Alagoas: Chamber of Commerce and Discover</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3175/3175199.png">
+    <meta name="description" content="Discover local events, gastronomy, and cultural experiences in Alagoas, Brazil.">
+    <meta name="author" content="Wagner Sanches">
+    <meta property="og:title" content="SESC Alagoas">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.praiasdemaceio.com/wp-content/uploads/2017/03/Praia-de-Graxuma.jpg">
+    <meta property="og:url" content="https://wagnerxd12.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/sesclogo.jpg" alt="SESC Alagoas Logo">
+        <h1>Discover the Chamber of Commerce at SESC Alagoas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><img src="images/facebook-icon.jpg" alt="Facebook Icon" class="facebook-icon"></li>
+            </ul>
+        </nav>
+        <button id="hamburger-btn">&#8801;</button> <!-- Botão de hambúrguer -->
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/HeroImage.jpg" alt="Hero Image" loading="lazy">
+        </section>
+
+        <section class="call-to-action">
+            <h2>Join SESC Alagoas</h2>
+            <a href="#" class="cta-button">Join Now</a>
+        </section>
+
+        <section class="sidebar">
+            <div class="card">
+                <h2>About Alagoas</h2>
+                <p>Alagoas is a state in northeastern Brazil known for its stunning beaches, rich culture, and vibrant tourism. The state boasts some of the most beautiful beaches in the country, with crystal-clear waters and golden sands that attract visitors from all over the world. Alagoas is also renowned for its rich cultural heritage, with a blend of African, indigenous, and Portuguese influences that can be seen in its music, dance, and cuisine.</p>
+            </div>
+        
+            <div class="card">
+                <h2>Demographics</h2>
+                <p>Population: 3,337,357 (2021) 📊</p>
+                <p>Area: 27,767 km² 🌎</p>
+                <p>Capital: Maceió 🌆</p>
+            </div>
+        </section>
+        
+        <section class="gallery">
+            <figure>
+                <img src="images/HistoricCenter.jpg" alt="" loading="lazy">
+                <figcaption>Historic Center of Maceió🏛️</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/FioreFarm.jpg" alt="" loading="lazy">
+                <figcaption>Fiore Farm🏞️</figcaption>
+            </figure>
+            <figure>
+                <img src="images/HAPPYHOUR.jpg" alt="" loading="lazy">
+                <figcaption>HAPPY HOUR SESC Alagoas🍻</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Carnival.jpg" alt="" loading="lazy">
+                <figcaption>Carnival🎉 2024 SESC Alagoas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/AlagoanCuisine.jpg" alt="" loading="lazy">
+                <figcaption>Alagoan cuisine🥘</figcaption>
+            </figure>
+        </section>
+        
+        <div class="card">
+            <h2>Statistics</h2>
+            <p>Alagoas has an average annual temperature of 25°C. 🌡️</p>
+            <p>The state is known for its diverse flora and fauna. 🌿🐦</p>
+            <p>Alagoas ranks among the top Brazilian states for coconut and sugarcane production. 🥥🌾</p>
+            
+        </div>
+        
+        <div class="card">
+            <h2>Events</h2>
+            <p>Outdoor Concert - Join us for a night of music under the stars! Date: July 15th, 2024 🎶</p>
+            <p>Food Festival - Explore a variety of local cuisines and flavors! Date: July 20th, 2024 🍔</p>
+            <p>Art Exhibition - Discover the works of talented local artists! Date: July 25th, 2024 🎨</p>
+            <p>Traditional Dance Festival - Experience the vibrant rhythms and cultural dances of Alagoas! Date: August 5th, 2024 💃🕺</p>
+        </div>
+        
+        <div class="card">
+            <h2>Attractions</h2>
+            <p>Mangabeiras Municipal Natural Park - A green area with trails and beautiful views of Maceió🌳</p>
+            <p>Known for its pristine beaches and natural pools, São Miguel dos Milagres is a hidden gem for relaxation and nature lovers🌊 </p>
+            <p>Fernando Collor de Mello Bridge - Enjoy the stunning views of Mundaú Lagoon🌉 </p>
+            <p>São Francisco River - Take a boat tour and explore the scenic beauty of the São Francisco River⛵️</p>
+            <div class="visit-message">
+                <!-- Message about last visit will be displayed here -->
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us: info@sescalagoas.com.br | 82 3326-3133</p>
+        </div>
+        <div class="additional-info">
+            <p>Developed by Wagner Sanches WDD 230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script>
+        // Get the current date
+        const currentDate = new Date();
+
+        // Get the last visit date from localStorage
+        let lastVisitDate = localStorage.getItem('lastVisitDate');
+
+        // If this is the user's first visit, set lastVisitDate to the current date
+        if (!lastVisitDate) {
+            lastVisitDate = currentDate;
+            localStorage.setItem('lastVisitDate', lastVisitDate);
+            displayMessage("Welcome! Let us know if you have any questions.");
+        } else {
+            lastVisitDate = new Date(lastVisitDate);
+            
+            // Calculate the difference in days between the current date and the last visit date
+            const diffTime = Math.abs(currentDate - lastVisitDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            // Display the appropriate message based on the difference in days
+            if (diffDays < 1) {
+                displayMessage("Back so soon! Awesome!");
+            } else {
+                displayMessage(`You last visited ${diffDays} ${diffDays === 1 ? 'day' : 'days'} ago.`);
+            }
+        }
+
+        function displayMessage(message) {
+            const visitMessage = document.querySelector('.visit-message');
+            visitMessage.textContent = message;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+

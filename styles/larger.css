@@ -1,0 +1,40 @@
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+        background-color: #fff; /* White background for cards */
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .card img {
+        width: 100%; /* Make the image fill the card */
+        border-radius: 5px; /* Add border radius to the image */
+        margin-bottom: 10px; /* Add margin below the image */
+    }
+
+    .card h2 {
+        font-size: 1.5rem; /* Increase font size for the title */
+        margin-bottom: 10px; /* Add margin below the title */
+    }
+
+    .card p {
+        margin-bottom: 10px; /* Add margin below the text */
+    }
+
+    /* Adjust the height of the cards */
+    .card:nth-child(1),
+    .card:nth-child(2) {
+        height: 400px;
+    }
+
+    .card:nth-child(3) {
+        height: 550px;
+    }
+}

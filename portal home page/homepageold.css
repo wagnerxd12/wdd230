@@ -1,0 +1,220 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif; /* Use Roboto and Open Sans fonts */
+    line-height: 1.6;
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px; /* Add padding for profile picture */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.profile-picture {
+    border-radius: 50%; /* Make the profile picture round */
+    width: 200px; /* Set the width of the profile picture */
+    height: 200px; /* Set the height of the profile picture */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-right: 30px; /* Add space between the picture and the name */
+    background-color: #000; /* Set the background color of the picture */
+    border: 6px solid #fff; /* Add border to the picture */
+}
+
+.profile-name {
+    font-size: 28px; /* Set the font size of the name */
+    margin-top: 60px; /* Add space between the picture and the name */
+    color: #fff; /* Set the text color of the name */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    background-color: #333; /* Dark background color for the navigation menu */
+    padding: 10px 0; /* Add padding to the top and bottom of the menu */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+    padding: 5px 10px; /* Add padding to links */
+    border-radius: 5px; /* Add border radius to links */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+nav a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px;
+}
+
+.card {
+    padding: 15px; /* Adjust padding for cards */
+    background-color: #f5f5f5; /* Lighter background color for cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.card img {
+    width: 100%; /* Make the image fill the card */
+    border-radius: 5px; /* Add border radius to the image */
+    margin-bottom: 10px; /* Add margin below the image */
+}
+
+.card h2 {
+    font-size: 1.2rem; /* Reduce font size for the title */
+    margin-bottom: 8px; /* Reduce margin below the title */
+}
+
+.card p {
+    font-size: 0.9rem; /* Reduce font size for the text */
+    margin-bottom: 8px; /* Reduce margin below the text */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* Text color for the footer */
+    text-align: center;
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+    position: relative; /* Use relative positioning */
+    margin-top: 40px; /* Add space between the main content and the footer */
+}
+
+/* Footer internal elements */
+footer p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add margin to the top of the links */
+}
+
+.footer-links a {
+    color: #fff; /* Text color for the links */
+    margin: 0 10px; /* Add margin between the links */
+    text-decoration: none; /* Remove underline from the links */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.footer-links a:hover {
+    color: #ccc; /* Lighter text color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    header {
+        padding-top: 0; /* Remove padding for profile picture on smaller screens */
+    }
+
+    .profile-picture {
+        width: 80px; /* Decrease width of profile picture for smaller screens */
+        height: 80px; /* Decrease height of profile picture for smaller screens */
+        margin-bottom: 10px; /* Decrease margin below the profile picture for smaller screens */
+        margin-right: 10px; /* Add space between the picture and the name for smaller screens */
+    }
+
+    .profile-name {
+        font-size: 16px; /* Reduce font size of the name for smaller screens */
+        margin-top: 20px; /* Reduce space between the picture and the name for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Display links vertically on smaller screens */
+        align-items: center; /* Center the items horizontally on smaller screens */
+        position: absolute; /* Position the menu absolutely */
+        top: 60px; /* Align the top of the menu with the bottom of the header */
+        left: 0; /* Align the left of the menu with the left of the page */
+        width: 100%; /* Make the menu full width */
+        background-color: #333; /* Dark background color for the navigation menu */
+        padding: 10px 0; /* Add padding to the top and bottom of the menu */
+        display: none; /* Hide the menu by default */
+    }
+
+    nav ul.show {
+        display: block; /* Show the menu when the 'show' class is added */
+    }
+
+    nav li {
+        margin: 10px 0; /* Add margin above and below each link on smaller screens */
+    }
+
+    nav a {
+        padding: 10px 0; /* Add padding to links */
+        width: 100%; /* Make links full width */
+        text-align: center; /* Center text within links */
+        border-radius: 0; /* Remove border radius */
+    }
+
+    #hamburger-btn {
+        display: block; /* Display the hamburger button */
+        position: absolute; /* Position the button absolutely */
+        top: 20px; /* Align the top of the button with the top of the header */
+        right: 20px; /* Align the right of the button with the right of the page */
+        font-size: 24px; /* Set the font size of the button */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        z-index: 999; /* Ensure the button is above other elements */
+    }
+}
+
+/* Botão Modo Escuro */
+#dark-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botão Modo Claro */
+#light-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Alinhamento dos botões para telas menores */
+@media (max-width: 767px) {
+    #dark-mode-btn, #light-mode-btn {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+}

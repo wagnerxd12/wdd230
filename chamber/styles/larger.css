@@ -1,0 +1,28 @@
+/* large.css */
+
+/* Estilos para telas grandes */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas grandes */
+    }
+
+    header {
+        padding: 20px 0; /* Ajusta o preenchimento do cabeçalho */
+    }
+
+    main {
+        padding: 40px; /* Ajusta o preenchimento do conteúdo principal */
+    }
+
+    nav ul li {
+        margin-right: 30px; /* Ajusta o espaçamento entre os itens de navegação */
+    }
+
+    .cta-button {
+        padding: 15px 30px; /* Ajusta o preenchimento do botão de chamada para ação */
+    }
+
+    .spotlight {
+        margin-bottom: 30px; /* Ajusta o espaçamento entre os destaques */
+    }
+}

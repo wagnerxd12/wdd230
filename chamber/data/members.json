@@ -1,0 +1,65 @@
+[
+    {
+        "name": "BRK AMBIENTAL",
+        "address": "123 Main St, Maceió, AL",
+        "phone": "82 1234-5678",
+        "website": "https://www.brkambiental.com.br/",
+        "image": "BRKAmbiental.jpg",
+        "membershipLevel": "Gold",
+        "description": "Leading provider of innovative solutions."
+    },
+    {
+        "name": "CARAJAS",
+        "address": "456 Elm St, Maceió, AL",
+        "phone": "82 2345-6789",
+        "website": "https://www.carajas.com.br/",
+        "image": "Carajáslogo.jpg",
+        "membershipLevel": "Silver",
+        "description": "Experts in market analysis and consulting."
+    },
+    {
+        "name": "Equatorial Energia",
+        "address": "789 Pine St, Maceió, AL",
+        "phone": "82 3456-7890",
+        "website": "https://www.equatorialenergia.com.br/",
+        "image": "Logoequatorialenergia.jpg",
+        "membershipLevel": "Platinum",
+        "description": "Pioneers in renewable energy solutions."
+    },
+    {
+        "name": "ALOO TELECOM",
+        "address": "101 Maple St, Maceió, AL",
+        "phone": "82 4567-8901",
+        "website": "https://www.aloo.com.br/",
+        "image": "ALOOlogo.jpg",
+        "membershipLevel": "Gold",
+        "description": "Leaders in software development and IT services."
+    },
+    {
+        "name": "EF INVESTIMENTOS",
+        "address": "202 Oak St, Maceió, AL",
+        "phone": "82 5678-9012",
+        "website": "https://efinvestimentos.com.br/",
+        "image": "EFlogo.jpg",
+        "membershipLevel": "Silver",
+        "description": "Top provider of financial advisory services."
+    },
+    {
+        "name": "MCM Marketing Digital",
+        "address": "303 Cedar St, Maceió, AL",
+        "phone": "82 6789-0123",
+        "website": "https://mcmidias.com.br/ ",
+        "image": "MCMlogo.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Experts in digital marketing and SEO strategies."
+    },
+    {
+        "name": "Santa Casa",
+        "address": "404 Birch St, Maceió, AL",
+        "phone": "82 7890-1234",
+        "website": "https://santacasademaceio.com.br/",
+        "image": "Santa Casa logo.jpg",
+        "membershipLevel": "Gold",
+        "description": "Providers of cutting-edge healthcare solutions."
+    }
+]
